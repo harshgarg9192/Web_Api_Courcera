@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\91812\\Web_Api_Courcera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2016556F-08E1-7B71-1751-4E51C874B9F4}|WebApi_Courcera\\WebApi_Courcera.csproj|c:\\users\\91812\\web_api_courcera\\webapi_courcera\\models\\customauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2016556F-08E1-7B71-1751-4E51C874B9F4}|WebApi_Courcera\\WebApi_Courcera.csproj|solutionrelative:webapi_courcera\\models\\customauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2016556F-08E1-7B71-1751-4E51C874B9F4}|WebApi_Courcera\\WebApi_Courcera.csproj|c:\\users\\91812\\web_api_courcera\\webapi_courcera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2016556F-08E1-7B71-1751-4E51C874B9F4}|WebApi_Courcera\\WebApi_Courcera.csproj|solutionrelative:webapi_courcera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2016556F-08E1-7B71-1751-4E51C874B9F4}|WebApi_Courcera\\WebApi_Courcera.csproj|c:\\users\\91812\\web_api_courcera\\webapi_courcera\\models\\customauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2016556F-08E1-7B71-1751-4E51C874B9F4}|WebApi_Courcera\\WebApi_Courcera.csproj|solutionrelative:webapi_courcera\\models\\customauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2016556F-08E1-7B71-1751-4E51C874B9F4}|WebApi_Courcera\\WebApi_Courcera.csproj|c:\\users\\91812\\web_api_courcera\\webapi_courcera\\controllers\\shirtscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,16 +34,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Program.cs",
               "RelativeDocumentMoniker": "WebApi_Courcera\\Program.cs",
-              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Program.cs",
-              "RelativeToolTip": "WebApi_Courcera\\Program.cs",
+              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Program.cs*",
+              "RelativeToolTip": "WebApi_Courcera\\Program.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T11:19:35.886Z",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomAuthenticationMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\CustomAuthenticationMiddleware.cs",
               "RelativeDocumentMoniker": "WebApi_Courcera\\Models\\CustomAuthenticationMiddleware.cs",
-              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\CustomAuthenticationMiddleware.cs",
-              "RelativeToolTip": "WebApi_Courcera\\Models\\CustomAuthenticationMiddleware.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBAAAAA2AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\CustomAuthenticationMiddleware.cs*",
+              "RelativeToolTip": "WebApi_Courcera\\Models\\CustomAuthenticationMiddleware.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T11:19:00.416Z",
               "EditorCaption": ""
@@ -81,8 +81,8 @@
               "Title": "Shirt.cs",
               "DocumentMoniker": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\Shirt.cs",
               "RelativeDocumentMoniker": "WebApi_Courcera\\Models\\Shirt.cs",
-              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\Shirt.cs",
-              "RelativeToolTip": "WebApi_Courcera\\Models\\Shirt.cs",
+              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\Shirt.cs*",
+              "RelativeToolTip": "WebApi_Courcera\\Models\\Shirt.cs*",
               "ViewState": "AgIAAAkAAAAAAAAAAAAYwAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T14:58:43.601Z",
@@ -107,8 +107,8 @@
               "Title": "PriceValidation.cs",
               "DocumentMoniker": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\PriceValidation.cs",
               "RelativeDocumentMoniker": "WebApi_Courcera\\Models\\PriceValidation.cs",
-              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\PriceValidation.cs",
-              "RelativeToolTip": "WebApi_Courcera\\Models\\PriceValidation.cs",
+              "ToolTip": "C:\\Users\\91812\\Web_Api_Courcera\\WebApi_Courcera\\Models\\PriceValidation.cs*",
+              "RelativeToolTip": "WebApi_Courcera\\Models\\PriceValidation.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T11:12:12.551Z",

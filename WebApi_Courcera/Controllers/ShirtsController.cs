@@ -4,44 +4,67 @@ using WebApi_Courcera.Models;
 namespace WebApi_Courcera.Controllers
 {
     [ApiController]
-    [Route("API/[Controller]")]
-    public class ShirtsController:ControllerBase
+    [Route("api/[controller]")]
+    public class ShirtsController : ControllerBase
     {
+        // GET: api/shirts
         [HttpGet]
-        public IActionResult GetShirts()
+        public ActionResult<IEnumerable<Shirt>> GetShirts()
         {
             return Ok(ShirtStore.Shirts);
         }
-        [HttpGet("{id}")]
-        public IActionResult GetShirtByAnything(int id)
+
+        // GET: api/shirts/5
+        [HttpGet("{id:int}")]
+        public ActionResult<Shirt> GetShirtById(int id)
         {
-            Shirt s=Shirt.GetShirtID(id);
-            if (s == null) return NotFound();
-            return Ok(s);
-        }
-        [HttpPut]
-        public IActionResult AddShirt([FromBody] Shirt s)
-        {
-            ShirtStore.Shirts.Add(s);
-            return Ok();
+            var shirt = Shirt.GetShirtID(id);
+            if (shirt == null)
+                return NotFound($"Shirt with id {id} not found");
+
+            return Ok(shirt);
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult SellShirt(int id)
-        {
-            Shirt s =Shirt.GetShirtID(id);
-            if (s == null) return NotFound();
-            ShirtStore.Shirts.Remove(s);
-            return Ok("shirt have sucessfully purchased");
-        }
+        // POST: api/shirts
         [HttpPost]
-        public IActionResult UpdateShirt([FromBody] Shirt? s)
+        public ActionResult AddShirt([FromBody] Shirt shirt)
         {
-            if(s == null) return BadRequest();
-            Shirt shirt = Shirt.GetShirtID(s.Id);
-            ShirtStore.Shirts[shirt.Id] = shirt;
-            return Ok("shirt have sucessfully updated");
+            if (shirt == null)
+                return BadRequest("Shirt data is required");
+
+            ShirtStore.Shirts.Add(shirt);
+            return CreatedAtAction(nameof(GetShirtById), new { id = shirt.Id }, shirt);
         }
 
+        // PUT: api/shirts/5
+        [HttpPut("{id:int}")]
+        public ActionResult UpdateShirt(int id, [FromBody] Shirt shirt)
+        {
+            if (shirt == null || id != shirt.Id)
+                return BadRequest("Invalid shirt data");
+
+            var existingShirt = Shirt.GetShirtID(id);
+            if (existingShirt == null)
+                return NotFound($"Shirt with id {id} not found");
+
+            existingShirt.Name = shirt.Name;
+            existingShirt.Color = shirt.Color;
+            existingShirt.Price = shirt.Price;
+            existingShirt.Gender = shirt.Gender;
+
+            return Ok("Shirt updated successfully");
+        }
+
+        // DELETE: api/shirts/5
+        [HttpDelete("{id:int}")]
+        public ActionResult DeleteShirt(int id)
+        {
+            var shirt = Shirt.GetShirtID(id);
+            if (shirt == null)
+                return NotFound($"Shirt with id {id} not found");
+
+            ShirtStore.Shirts.Remove(shirt);
+            return Ok("Shirt purchased successfully");
+        }
     }
 }

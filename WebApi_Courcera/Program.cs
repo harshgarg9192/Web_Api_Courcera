@@ -1,3 +1,5 @@
+using WebApi_Courcera.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,7 +13,7 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseMiddleware<CustomAuthenticationMiddleware>();
 app.MapControllers();
 
 app.Run();

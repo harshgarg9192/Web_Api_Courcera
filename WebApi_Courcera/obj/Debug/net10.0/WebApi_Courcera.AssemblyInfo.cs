@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApi_Courcera")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64409ea3e94b09811757df1bf95510b4afba3520")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66d71b3a8cfbd95444de5d7fb0ddb46ca1a8bbd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApi_Courcera")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApi_Courcera")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
